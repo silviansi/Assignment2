@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">My Portofolio</div>
+            <ul class="navbar">
+                <li><a href="#">HOME</li></a>
+                <li><a href="product.html">PRODUCT</li></a>
+                <li><a href="#">GALLERY</li></a>
+                <li><a href="#">BLOG</li></a>
+                <li><a href="#">INVENTORY</li></a>
+            </ul>
+    </div>
+
+    <div class="profile">
+        <div class="flex-container">
+            <img src="foto1.jpg">
+            
+            <div class="prof">
+                <h1 id="nama">Silvia Nanda Syafa Iswahyudi</h1>
+                <p id="role">Web Developer</p>
+                <button onclick="hideShow()">Edit</button>
+                <button type="button">Kontak</button>
+            </div>
+            <div id="keterangan">
+                <table>
+                    <tr>
+                        <td><b>Availability</b></td>
+                        <td id="availability">: Full Time</td>
+                    </tr>
+                    <tr>
+                        <td><b>Usia</b></td>
+                        <td id="usia">: 19 Tahun</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lokasi</b></td>
+                        <td id="lokasi">: Sidoarjo</td>
+                    </tr>
+                    <tr>
+                        <td><b>Universitas</b></td>
+                        <td id="univ">: Universitas Negeri Surabaya</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td id="email">: silviansi24@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    </div>
+
+    <div id="form" style="display:none">
+    <form id="form1" name="form1" onsubmit="return false">
+        <label for="nama">Nama</label><br>
+        <input type="text" id="inputNama" name="nama" value="Silvia Nanda Syafa Iswahyudi" placeholder="Masukkan Nama Anda"><br>
+        <label for="role">Role</label><br>
+        <input type="text" id="inputRole" name="role" value="Web Developer"><br>
+        <label for="availability">Availability</label><br>
+        <input type="text" id="inputAvailability" name="availability" value="Full Time"><br>
+        <label for="usia">Usia</label><br>
+        <input type="text" id="inputUsia" name="usia" value="19"><br>
+        <label for="nama">Lokasi</label><br>
+        <input type="text" id="inputLokasi" name="nama" value="Sidoarjo"><br>
+        <label for="years">Universitas</label><br>
+        <input type="text" id="inputUniv" name="years" value="Universitas Negeri Surabaya"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="inputEmail" name="email" value="silviansi24@gmail.com"><br>
+        <input type="submit" value="Submit" onclick="tampilkan()"><br>
+    </form>
+</div>
+
+</body>
+    <script src="script.js"></script>
+</html>
